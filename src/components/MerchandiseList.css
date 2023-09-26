@@ -1,0 +1,144 @@
+/* MerchandiseList.css */
+
+/* Style for the merchandise list container */
+.merchandise-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly */
+  }
+
+  .top-right-options {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for the profile icon */
+  .top-right-options img {
+    cursor: pointer;
+    margin-left: 10px; /* Add some spacing between the profile icon and other elements */
+  }
+  
+  /* Style for the dropdown menu */
+  .dropdown-menu {
+    position: absolute;
+    top: 50px; /* Adjust the top position to position the menu below the profile icon */
+    right: 0;
+    width: 200px; /* Adjust the width as needed */
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure it appears above other content */
+  }
+  
+  
+  /* Style for the menu items */
+  .dropdown-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-menu ul li {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  /* Style for the last menu item (Sign Out button) */
+  .dropdown-menu ul li:last-child {
+    border-bottom: none;
+    background-color: #f4f4f4; /* Set a background color for the "Sign Out" button */
+    cursor: pointer;
+  }
+  .dropdown-menu ul li:last-child button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px; /* Decrease the font size for the "Sign Out" button text */
+    color: #333; /* Change the text color to black */
+  }
+  
+  /* Style for the Sign Out button on hover */
+  .dropdown-menu ul li:last-child button:hover {
+    background-color: #ddd; /* Change the background color on hover */
+  }
+  .left-column {
+    flex: 0 0 20%; /* Fixed width for the left column (adjust as needed) */
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  /* Style for category buttons */
+.category-button {
+  display: block;
+  padding: 10px 0;
+  text-align: left;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #333;
+  text-decoration: none;
+  background-color: #f4f4f4; /* Default background color for all categories */
+}
+
+.category-button:hover {
+  color: #ca2a2a;
+}
+
+/* Style for active category button */
+.category-button.active {
+  color: #3504f9;
+}
+
+
+/* Style for the right-hand column (merchandise items) */
+.right-column {
+  flex: 1; /* Expand to fill the remaining space */
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+/* Style for each merchandise item container */
+.merchandise-item {
+  flex-basis: calc(25% - 20px); /* Adjust to show 4 items per row */
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Style for merchandise item image */
+.merchandise-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for merchandise item title */
+.merchandise-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-decoration: none !important; /* Remove underline */
+  color: #0a4079; /* Set text color to dark blue */
+}
+
+/* Style for merchandise item price */
+.merchandise-price {
+  font-weight: bold;
+  margin: 10px 0;
+  text-decoration: none; /* Remove underline */
+  color: #0a4079; /* Set text color to dark blue */
+}
+/* Style for "View Details" link */
+.view-details-link {
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+
